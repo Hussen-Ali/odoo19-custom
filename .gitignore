@@ -1,0 +1,135 @@
+
+# Byte-compiled / cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+.env
+.env.*/
+.envrc
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+
+# Logs / temporary files
+*.log
+*.pid
+*.seed
+*.cover
+*.csv
+*.tsv
+*.tmp
+*.bak
+*.swp
+*.swo
+
+# ===========================
+# IDE / Editor Settings
+# ===========================
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# ===========================
+# Odoo Specific
+# ===========================
+# Auto-generated Odoo files and backups
+*.zip
+*.tar.gz
+*.db
+*.sql
+*.rdb
+*.dump
+*.dat
+*.xlsx
+*.ods
+*.csv
+
+# Session / cache
+*.session
+*.cache
+*.bak
+*.old
+
+# Odoo addons temp
+odoo/addons/*/__pycache__/
+custom_addons/*/__pycache__/
+custom_addons/*/static/.build/
+custom_addons/*/static/lib/
+custom_addons/*/static/src/js/.babel_cache/
+
+# Ignore compiled assets
+*.min.js
+*.min.css
+*.bundle.js
+*.bundle.css
+
+# ===========================
+# OS Files
+# ===========================
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Icon?
+Desktop.ini
+
+# ===========================
+# Secrets / Credentials
+# ===========================
+*.pem
+*.key
+*.crt
+*.cer
+*.p12
+*.jks
+*.keystore
+*.conf
+*.cfg
+*.ini
+*.secret
+*.secrets
+*.token
+*.env.local
+secrets.*
+config_private.py
+
+# ===========================
+# Node / JS / Frontend tools
+# ===========================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+
+# ===========================
+# Misc
+# ===========================
+# Backup files
+*~
+*.orig
+
+# JetBrains
+.idea/
+*.iml
+
+# ===========================
+# Local Databases (if any)
+# ===========================
+*.sqlite3
+*.sqlite
+*.db
+
+# ===========================
+# pyenv / poetry / pipenv
+# ===========================
+.python-version
+poetry.lock
+Pipfile.lock
