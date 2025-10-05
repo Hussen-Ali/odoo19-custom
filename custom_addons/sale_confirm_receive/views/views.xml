@@ -1,0 +1,18 @@
+<odoo>
+  <data>
+  <record id="view_order_form_confirm_receive" model="ir.ui.view">
+    <field name="name">sale.order.form.confirm.receive</field>
+    <field name="model">sale.order</field>
+    <field name="inherit_id" ref="sale.view_order_form"/>
+    <field name="arch" type="xml">
+      <xpath expr="//header//button[@name='action_confirm']" position="replace">
+        <button name="action_confirm_and_receive"
+                type="object"
+                string="Confirm &amp; Receive"
+                class="btn-primary"
+                invisible="state != 'draft'"/>
+      </xpath>
+    </field>
+  </record>
+  </data>
+</odoo>

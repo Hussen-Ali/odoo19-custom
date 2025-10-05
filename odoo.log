@@ -1,0 +1,46 @@
+2025-10-03 05:22:17,161 80328 WARNING ? odoo.tools.config: option addons_path, invalid addons directory '/Users/hussein/Desktop/Odoo19/odoo19/my-addons', skipped 
+2025-10-03 05:22:17,161 80328 WARNING ? odoo.tools.config: missing --http-interface/http_interface, using 0.0.0.0 by default, will change to 127.0.0.1 in 20.0 
+2025-10-03 05:22:17,161 80328 INFO ? odoo: Odoo version 19.0 
+2025-10-03 05:22:17,161 80328 INFO ? odoo: Using configuration file at /Users/hussein/Desktop/Odoo19/odoo19/odoo.conf 
+2025-10-03 05:22:17,161 80328 INFO ? odoo: addons paths: _NamespacePath(['/Users/hussein/Desktop/Odoo19/odoo19/odoo/addons', '/Users/hussein/Library/Application Support/Odoo/addons/19.0', '/Users/hussein/Desktop/Odoo19/odoo19/addons']) 
+2025-10-03 05:22:17,161 80328 INFO ? odoo: database: odoo19dbuser@localhost:5432 
+2025-10-03 05:22:17,339 80328 INFO ? odoo.service.server: HTTP service (werkzeug) running on 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa:8019 
+2025-10-03 05:22:17,786 80328 INFO ? odoo.modules.loading: loading 1 modules... 
+2025-10-03 05:22:17,792 80328 INFO ? odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2025-10-03 05:22:17,799 80328 INFO ? odoo.modules.loading: loading 14 modules... 
+2025-10-03 05:22:17,923 80328 INFO ? odoo.modules.loading: 14 modules loaded in 0.12s, 0 queries (+0 extra) 
+2025-10-03 05:22:17,946 80328 INFO ? odoo.modules.loading: Modules loaded. 
+2025-10-03 05:22:17,958 80328 INFO ? odoo.registry: Registry loaded in 0.209s 
+2025-10-03 05:22:17,959 80328 INFO odoo19dbuser odoo.addons.base.models.ir_http: Generating routing map for key None 
+2025-10-03 05:22:17,973 80328 INFO odoo19dbuser werkzeug: 127.0.0.1 - - [03/Oct/2025 05:22:17] "GET /websocket?version=saas-18.5-1 HTTP/1.1" 101 - 21 0.038 0.188
+2025-10-03 05:22:17,985 80328 INFO odoo19dbuser werkzeug: 127.0.0.1 - - [03/Oct/2025 05:22:17] "POST /bus/has_missed_notifications HTTP/1.1" 200 - 2 0.002 0.001
+2025-10-03 05:22:18,303 80328 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2025-10-03 05:25:35,248 80439 WARNING ? odoo.tools.config: option addons_path, invalid addons directory '/Users/hussein/Desktop/Odoo19/odoo19/my-addons', skipped 
+2025-10-03 05:25:35,248 80439 WARNING ? odoo.tools.config: missing --http-interface/http_interface, using 0.0.0.0 by default, will change to 127.0.0.1 in 20.0 
+2025-10-03 05:25:35,248 80439 INFO ? odoo: Odoo version 19.0 
+2025-10-03 05:25:35,248 80439 INFO ? odoo: Using configuration file at /Users/hussein/Desktop/Odoo19/odoo19/odoo.conf 
+2025-10-03 05:25:35,248 80439 INFO ? odoo: addons paths: _NamespacePath(['/Users/hussein/Desktop/Odoo19/odoo19/odoo/addons', '/Users/hussein/Library/Application Support/Odoo/addons/19.0', '/Users/hussein/Desktop/Odoo19/odoo19/addons']) 
+2025-10-03 05:25:35,248 80439 INFO ? odoo: database: odoo19dbuser@localhost:5432 
+2025-10-03 05:25:40,109 80328 INFO ? odoo.service.server: Initiating shutdown 
+2025-10-03 05:25:40,109 80328 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
+2025-10-03 05:25:40,477 80328 INFO ? odoo.sql_db: ConnectionPool(read/write;used=0/count=0/max=64): Closed 4 connections  
+2025-10-03 05:25:44,768 80463 WARNING ? odoo.tools.config: option addons_path, invalid addons directory '/Users/hussein/Desktop/Odoo19/odoo19/my-addons', skipped 
+2025-10-03 05:25:44,768 80463 WARNING ? odoo.tools.config: missing --http-interface/http_interface, using 0.0.0.0 by default, will change to 127.0.0.1 in 20.0 
+2025-10-03 05:25:44,769 80463 INFO ? odoo: Odoo version 19.0 
+2025-10-03 05:25:44,769 80463 INFO ? odoo: Using configuration file at /Users/hussein/Desktop/Odoo19/odoo19/odoo.conf 
+2025-10-03 05:25:44,769 80463 INFO ? odoo: addons paths: _NamespacePath(['/Users/hussein/Desktop/Odoo19/odoo19/odoo/addons', '/Users/hussein/Library/Application Support/Odoo/addons/19.0', '/Users/hussein/Desktop/Odoo19/odoo19/addons']) 
+2025-10-03 05:25:44,769 80463 INFO ? odoo: database: odoo19dbuser@localhost:5432 
+2025-10-03 05:25:44,938 80463 INFO ? odoo.service.server: HTTP service (werkzeug) running on 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa:8019 
+2025-10-03 05:25:46,402 80463 INFO ? odoo.modules.loading: loading 1 modules... 
+2025-10-03 05:25:46,408 80463 INFO ? odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2025-10-03 05:25:46,415 80463 INFO ? odoo.modules.loading: loading 14 modules... 
+2025-10-03 05:25:46,544 80463 INFO ? odoo.modules.loading: 14 modules loaded in 0.13s, 0 queries (+0 extra) 
+2025-10-03 05:25:46,568 80463 INFO ? odoo.modules.loading: Modules loaded. 
+2025-10-03 05:25:46,579 80463 INFO ? odoo.registry: Registry loaded in 0.213s 
+2025-10-03 05:25:46,580 80463 INFO odoo19dbuser odoo.addons.base.models.ir_http: Generating routing map for key None 
+2025-10-03 05:25:46,595 80463 INFO odoo19dbuser werkzeug: 127.0.0.1 - - [03/Oct/2025 05:25:46] "GET /websocket?version=saas-18.5-1 HTTP/1.1" 101 - 21 0.041 0.192
+2025-10-03 05:25:46,606 80463 INFO odoo19dbuser werkzeug: 127.0.0.1 - - [03/Oct/2025 05:25:46] "POST /bus/has_missed_notifications HTTP/1.1" 200 - 2 0.001 0.001
+2025-10-03 05:25:46,929 80463 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2025-10-03 05:26:51,281 80463 INFO ? odoo.service.server: Initiating shutdown 
+2025-10-03 05:26:51,285 80463 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
+2025-10-03 05:26:51,808 80463 INFO ? odoo.sql_db: ConnectionPool(read/write;used=0/count=0/max=64): Closed 4 connections  
