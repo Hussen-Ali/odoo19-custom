@@ -1,37 +1,37 @@
-# Odoo
+# 🧩 Odoo Community + Custom Addons & Apps
 
-[![Build Status](https://runbot.odoo.com/runbot/badge/flat/1/master.svg)](https://runbot.odoo.com/runbot)
-[![Tech Doc](https://img.shields.io/badge/master-docs-875A7B.svg?style=flat&colorA=8F8F8F)](https://www.odoo.com/documentation/master)
-[![Help](https://img.shields.io/badge/master-help-875A7B.svg?style=flat&colorA=8F8F8F)](https://www.odoo.com/forum/help-1)
-[![Nightly Builds](https://img.shields.io/badge/master-nightly-875A7B.svg?style=flat&colorA=8F8F8F)](https://nightly.odoo.com/)
+Welcome to my **Odoo Community Addons & Apps** repository.  
+This repo contains my personal custom developments on top of Odoo Community Edition to make business operations smoother, faster, and more tailored to real-world commercial needs.
 
-Odoo is a suite of web based open source business apps.
+## 📦 About This Repository
 
-The main Odoo Apps include an [Open Source CRM](https://www.odoo.com/page/crm),
-[Website Builder](https://www.odoo.com/app/website),
-[eCommerce](https://www.odoo.com/app/ecommerce),
-[Warehouse Management](https://www.odoo.com/app/inventory),
-[Project Management](https://www.odoo.com/app/project),
-[Billing &amp; Accounting](https://www.odoo.com/app/accounting),
-[Point of Sale](https://www.odoo.com/app/point-of-sale-shop),
-[Human Resources](https://www.odoo.com/app/employees),
-[Marketing](https://www.odoo.com/app/social-marketing),
-[Manufacturing](https://www.odoo.com/app/manufacturing),
-[...](https://www.odoo.com/)
+- Base system: **Odoo Community**
+- Purpose: To provide practical, business-focused enhancements through custom addons and apps.
+- Status: Addons will be added progressively as they’re developed and tested.
 
-Odoo Apps can be used as stand-alone applications, but they also integrate seamlessly so you get
-a full-featured [Open Source ERP](https://www.odoo.com) when you install several Apps.
+## 🚀 Current Addons
 
-## Getting started with Odoo
+### 1. Confirm & Receive Module ✅ (Still need some edits such as giving this perm to specific users)
+This addon streamlines sales order processing:
+- Replaces the standard **“Confirm”** button in the Sales Order with **“Confirm & Receive”**.
+- Confirms the order **and** triggers immediate receipt creation in one click (keep in mind this is only for Non-Tracked products, where Lot need to be specified manualy in order to be recieved in the inventory (maybe we can put lot automatically depending on a user specification)).
+- Ideal for businesses that require quick sales and stock operations without extra steps.
 
-For a standard installation please follow the [Setup instructions](https://www.odoo.com/documentation/master/administration/install/install.html)
-from the documentation.
+### 2. Item Box Module (In Progress) 📦
+This upcoming addon introduces flexible item packaging options:
+- Adds a **“Box” field** for each product.
+- Allows defining **custom packaging names** (e.g., Box, Carton, Bag, or any user-defined name).
+- Assigns a **box price** for better inventory and pricing control.
 
-To learn the software, we recommend the [Odoo eLearning](https://www.odoo.com/slides),
-or [Scale-up, the business game](https://www.odoo.com/page/scale-up-business-game).
-Developers can start with [the developer tutorials](https://www.odoo.com/documentation/master/developer/howtos.html).
+## 🏗️ Roadmap
 
-## Security
+- [ ] Complete Item Box Module  
+- [ ] Add more business-focused modules  
+- [ ] Improve UI for faster daily operations  
+- [ ] Documentation for each module
 
-If you believe you have found a security issue, check our [Responsible Disclosure page](https://www.odoo.com/security-report)
-for details and get in touch with us via email.
+## 🧰 Installation
+
+1. Clone repository modules:
+   ```bash
+   git clone https://github.com/Hussen-Ali/custom_addons/sale_confirm_receive
