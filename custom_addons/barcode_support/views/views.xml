@@ -1,0 +1,7 @@
+<odoo>
+    <record id="my_purchase_order" model="ir.ui.view">
+        <field name="name">
+            purchase.order.view.form.inherit.barcode.scanning.sale.purchase
+        </field>
+    </record>
+</odoo>
