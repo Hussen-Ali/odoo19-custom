@@ -8,30 +8,57 @@ This repo contains my personal custom developments on top of Odoo Community Edit
 - Base system: **Odoo Community**
 - Purpose: To provide practical, business-focused enhancements through custom addons and apps.
 - Status: Addons will be added progressively as they’re developed and tested.
+- Each custom module has an associated **video demonstration**.
+- **Note:** There are other addons in this repo that are open-source from the internet (e.g., web themes, accountant app, Query Deluxe for database). You can ignore those—they are not custom.
 
-## 🚀 Current Addons
+## 🚀 Current Custom Addons
 
-### 1. Confirm & Receive Module ✅ (Still need some edits such as giving this perm to specific users)
-This addon streamlines sales order processing:
-- Replaces the standard **“Confirm”** button in the Sales Order with **“Confirm & Receive”**.
-- Confirms the order **and** triggers immediate receipt creation in one click (keep in mind this is only for Non-Tracked products, where Lot need to be specified manualy in order to be recieved in the inventory (maybe we can put lot automatically depending on a user specification)).
-- Ideal for businesses that require quick sales and stock operations without extra steps.
+### 1. Sale Confirm & Receive Module ✅
+Streamlines sales order processing:
+- Confirms the order **and** triggers immediate receipt creation in one click (works for Non-Tracked products; lot numbers must be specified manually unless configured otherwise).
+- Reduces extra steps in sales-to-stock operations.
+- Can be restricted to specific users (permission-based).
 
-### 2. Item Box Module (In Progress) 📦
-This upcoming addon introduces flexible item packaging options:
-- Adds a **“Box” field** for each product.
-- Allows defining **custom packaging names** (e.g., Box, Carton, Bag, or any user-defined name).
-- Assigns a **box price** for better inventory and pricing control.
+
+https://github.com/user-attachments/assets/10c8ae4a-9a07-4477-bd71-80d1fb50800c
+
+
+### 2. Sale Price Check Module ✅
+Prevents selling products below their **Average Cost (AVCO)**:
+- Checks sales orders and prevents confirmation if the unit price is below the product's average cost.
+- Ideal for maintaining profitability and avoiding accidental losses.
+
+
+https://github.com/user-attachments/assets/9230b322-0b80-4d10-93a6-ead80744bcc5
+
+
+### 3. Barcode Support Module ✅
+Enhances the **Purchase** app with barcode scanning:
+- Scan barcodes to automatically fetch and add products.
+- Eliminates manual search and typing.
+- Speeds up stock receipt and purchase order processing.
+
+
+https://github.com/user-attachments/assets/1380a503-fae0-4de5-a410-e15c7e5597f2
+
+
+### 4. Product Box Module (In Progress) 📦
+Upcoming addon for selling products with packages/boxes:
+- introduces a new product named “BOX”.
+- When you buy a package of items, the BOX product stock increases by 1.
+- Each purchased item placed in a package contributes to incrementing the BOX stock.
+- Enables tracking the number of packages (boxes) based on purchases.
+- Still under development.
 
 ## 🏗️ Roadmap
 
-- [ ] Complete Item Box Module  
+- [ ] Complete Product Box Module  
 - [ ] Add more business-focused modules  
 - [ ] Improve UI for faster daily operations  
-- [ ] Documentation for each module
+- [ ] Documentation for each module  
 
 ## 🧰 Installation
 
 1. Clone repository modules:
    ```bash
-   git clone https://github.com/Hussen-Ali/custom_addons/sale_confirm_receive
+   git clone https://github.com/Hussen-Ali/custom_addons.git
