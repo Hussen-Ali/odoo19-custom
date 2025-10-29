@@ -1,9 +1,16 @@
-from odoo import models, fields, api
+from odoo import models, api
 
+class StockPicking(models.Model):
+    _inherit = 'stock.picking'
 
-class ProductBox(models.Model):
-    _inherit = 'product.template'
+    def button_validate(self):
+        res = super().button_validate()
+        self._increment_box()
+        return res
 
-    product_box = fields.Char("Product Box", required=True)
-
+    def _increment_box(self):
+        BOX_PRODUCT_NAME = "BOX"
+        box_product = self.env['product.product'].search([('name', '=', BOX_PRODUCT_NAME)], limit=1)
+        if not box_product:
+            return
 
