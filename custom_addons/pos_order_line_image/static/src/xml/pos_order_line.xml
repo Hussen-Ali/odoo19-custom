@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+    <t
+       t-inherit="point_of_sale.Orderline"
+       t-inherit-mode="extension"
+       owl="1">
+<!-- IQD Price -->
+<xpath expr="//div[hasclass('line-details')]"
+       position="inside">
+    <div class="iqd-price text-muted" style="font-size:10px; width:25%; padding-left:5px;">
+        <t t-esc="
+            Math.round(
+                line.unitDisplayPrice *
+                this.props.line.getQuantity() *
+                1600
+            ).toLocaleString()
+        "/>
+        IQD
+    </div>
+</xpath>
+    </t>
+<!-- IQD Total -->
+<t
+   t-inherit="point_of_sale.OrderDisplay"
+   t-inherit-mode="extension"
+   owl="1">
+    <xpath expr="//span[hasclass('total')]"
+           position="after">
+        <div class="text-muted fs-6">
+            <t t-esc="Math.round(taxTotals.order_sign * taxTotals.order_total * 1600).toLocaleString()"/>
+            IQD
+        </div>
+    </xpath>
+</t>
+</templates>

@@ -1,0 +1,34 @@
+<odoo>
+    <record id="report_layout_ui_invoice" model="report.layout">
+        <field name="name">UI Custom Invoice</field>
+        <field name="sequence">10</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="html"><![CDATA[
+<div class="page">
+    <h1 style="text-align:center; color:#004080;">Custom Invoice</h1>
+    <p><strong>Invoice Number:</strong> <t t-esc="doc.name"/></p>
+    <p><strong>Customer:</strong> <t t-esc="doc.partner_id.name"/></p>
+    <table class="table table-condensed">
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Unit Price</th>
+                <th>Subtotal</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr t-foreach="doc.invoice_line_ids" t-as="line">
+                <td><t t-esc="line.product_id.name"/></td>
+                <td><t t-esc="line.quantity"/></td>
+                <td><t t-esc="line.price_unit"/></td>
+                <td><t t-esc="line.price_subtotal"/></td>
+            </tr>
+        </tbody>
+    </table>
+    <p><strong>Total:</strong> <t t-esc="doc.amount_total"/></p>
+    <p style="text-align:center; margin-top:20px;">Thank you for your business!</p>
+</div>
+        ]]></field>
+    </record>
+</odoo>
