@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <record id="view_debug_console_form" model="ir.ui.view">
+        <field name="name">debug.console.form</field>
+        <field name="model">debug.console</field>
+        <field name="arch" type="xml">
+            <form string="Debug Console">
+
+                <header>
+                    <button name="action_run_test"
+                            type="object"
+                            string="Run Debug"
+                            class="btn-primary"/>
+                </header>
+
+                <sheet>
+                    <group>
+                        <field name="output" readonly="1"/>
+                    </group>
+                </sheet>
+
+            </form>
+        </field>
+    </record>
+
+    <record id="action_debug_console" model="ir.actions.act_window">
+        <field name="name">Debug Console</field>
+        <field name="res_model">debug.console</field>
+        <field name="view_mode">form</field>
+        <field name="target">current</field>
+        <field name="view_id" ref="view_debug_console_form"/>
+        <field name="context">{'form_view_initial_mode': 'edit'}</field>
+    </record>
+
+    <menuitem id="menu_debug_root" name="Debug Tools"/>
+
+    <menuitem id="menu_debug_console"
+              name="Debug Console"
+              parent="menu_debug_root"
+              action="action_debug_console"/>
+
+</odoo>
