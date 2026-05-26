@@ -1,0 +1,18 @@
+.pos-receipt {
+    font-size: 12px;
+}
+
+.pos-receipt div {
+    padding: 1px 0 !important;
+    margin: 0 !important;
+}
+.pos-receipt div {
+    column-gap: 6px !important;
+}
+.pos-receipt .orderline .qty,
+.pos-receipt .orderline .number,
+.pos-receipt .orderline .index {
+    min-width: unset !important;
+    width: auto !important;
+    padding-right: 4px !important;
+}

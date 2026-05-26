@@ -1,0 +1,26 @@
+<t t-inherit="point_of_sale.OrderReceipt"
+   t-inherit-mode="extension"
+   owl="1">
+
+    <xpath expr="//div[contains(@class,'total') or contains(@class,'order-total')]" position="replace">
+
+        <div class="order-total" style="font-size:14px;">
+
+            <!-- IQD TOTAL (NEW LINE) -->
+            <div style="margin-top:12px;">
+                <span class="fw-bold">Total: </span>
+                <span style="float: right;">
+                    <t t-esc="
+                        Math.round(
+                            props.order.getTotalWithTax() * 1600
+                        ).toLocaleString()
+                    "/>
+                    IQD
+                </span>
+            </div>
+
+        </div>
+
+    </xpath>
+
+</t>

@@ -42,20 +42,14 @@ Enhances the **Purchase** app with barcode scanning:
 https://github.com/user-attachments/assets/1380a503-fae0-4de5-a410-e15c7e5597f2
 
 
-### 4. Product Box Module (In Progress) 📦
-Upcoming addon for selling products with packages/boxes:
-- introduces a new product named “BOX”.
-- When you buy a package of items, the BOX product stock increases by 1.
-- Each purchased item placed in a package contributes to incrementing the BOX stock.
-- Enables tracking the number of packages (boxes) based on purchases.
+### 4. 
+
 - Still under development.
 
 ## 🏗️ Roadmap
 
-- [ ] Complete Product Box Module  
-- [ ] Add more business-focused modules  
-- [ ] Improve UI for faster daily operations  
-- [ ] Documentation for each module  
+- [ ] Complete .... Module  
+
 
 ## 🧰 Installation
 
