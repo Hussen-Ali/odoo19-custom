@@ -42,9 +42,11 @@ Enhances the **Purchase** app with barcode scanning:
 https://github.com/user-attachments/assets/1380a503-fae0-4de5-a410-e15c7e5597f2
 
 
-### 4. 
-
-- Still under development.
+### 4. Dual Currency PoS Display Module ✅
+Enhances the Point of Sale (PoS) app with dual-currency support:
+- Displays item prices in both USD and IQD directly inside the PoS cart.
+- Shows the final order total in dual currencies on the payment receipt.
+- Automatically converts prices using a customizable exchange rate.
 
 ## 🏗️ Roadmap
 
